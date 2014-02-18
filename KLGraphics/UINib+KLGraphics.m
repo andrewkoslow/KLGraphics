@@ -14,7 +14,7 @@
 
 - (id)instantiatedWithOwner:(id)owner firstObjectOfClass:(Class)objectClass {
 	NSArray *instantiatedObjects = [self instantiateWithOwner:owner options:nil];
-    NSAssert1(instantiatedObjects.count > 0, @"instantiatedObjects.count (= %ld) > 0", instantiatedObjects.count);
+    NSAssert1(instantiatedObjects.count > 0, @"instantiatedObjects.count (= %ld) > 0", (unsigned long)instantiatedObjects.count);
 	
 	id instantiatedObject = instantiatedObjects.firstObject;
     NSAssert1([instantiatedObject isKindOfClass:objectClass], @"[instantiatedObject isKindOfClass:%@]", NSStringFromClass(objectClass));
