@@ -297,4 +297,24 @@
 }
 
 
+- (CGFloat)intrinsicContentWidth {
+    return self.intrinsicContentSize.width;
+}
+
+
+- (CGFloat)intrinsicContentHeight  {
+    return self.intrinsicContentSize.height;
+}
+
+
+- (CGFloat)intrinsicContentNormalizedWidth {
+    return MAX(0.0, self.intrinsicContentSize.width);
+}
+
+
+- (CGFloat)intrinsicContentNormalizedHeight {
+    return MAX(0.0, self.intrinsicContentSize.height);
+}
+
+
 @end

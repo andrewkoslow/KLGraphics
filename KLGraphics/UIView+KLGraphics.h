@@ -39,5 +39,9 @@
 @property (assign) CGFloat boundMidY;
 @property (assign) CGPoint boundOrigin;
 @property (assign) CGSize boundSize;
+@property (readonly, assign) CGFloat intrinsicContentWidth;
+@property (readonly, assign) CGFloat intrinsicContentHeight;
+@property (readonly, assign) CGFloat intrinsicContentNormalizedWidth;
+@property (readonly, assign) CGFloat intrinsicContentNormalizedHeight;
 
 @end
